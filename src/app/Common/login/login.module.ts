@@ -21,9 +21,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
+    MatIconModule,
     MatCheckboxModule,
     MatIconModule,
-    MatButtonModule,
     MatButtonModule
   ]
 })
