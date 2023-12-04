@@ -2,7 +2,12 @@
   <p>dashboard works!</p>
 
   <div class="flex w-full gap-2 justify-center">
-    <button (click)="getDsCanBo()" mat-flat-button color="primary">
+    <button
+      [routerLink]="['/canbos']"
+      routerLinkActive="router-link-active"
+      mat-flat-button
+      color="primary"
+    >
       Cán bộ
     </button>
     <button
@@ -14,7 +19,7 @@
       Phòng ban
     </button>
   </div>
-
+  <button mat-flat-icon (click)="clearToken()">Sign out</button>
   <p>////////////////////////</p>
   <p>
     Set userId to empty string after {{ time$ | async }} seconds, notice the

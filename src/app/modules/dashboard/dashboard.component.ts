@@ -71,8 +71,7 @@ export class DashboardComponent implements OnInit {
   );
   ////////////////////////////////////////
   clearToken() {
-    localStorage.removeItem('authToken');
-    this._router.navigate(['login']);
+    this.authService.logout();
   }
   loopTime(val: any, timeLoop: any) {
     let loop = setInterval(() => {
