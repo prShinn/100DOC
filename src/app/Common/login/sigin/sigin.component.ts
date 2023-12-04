@@ -10,8 +10,9 @@ import { Router } from '@angular/router';
 })
 export class SiginComponent {
   loginForm = new FormGroup({
-    username: new FormControl(null, Validators.required),
-    password: new FormControl(null, Validators.required),
+    username: new FormControl('admin', Validators.required),
+    password: new FormControl('123456789', Validators.required),
+    rememberMe: new FormControl(false),
   });
   loginObj: any = {};
   isLoading: boolean = false;
