@@ -1,0 +1,23 @@
+<div class="my-2 flex justify-center">
+  <form action="" [formGroup]="loginForm">
+    <div class="flex gap-4">
+      <mat-form-field>
+        <mat-label>Tài khoản</mat-label>
+        <input type="text" matInput formControlName="username" />
+      </mat-form-field>
+      <mat-form-field class="fuse-mat-dense">
+        <mat-label>Mật khẩu</mat-label>
+        <input type="password" matInput formControlName="password" />
+      </mat-form-field>
+    </div>
+    <div class="flex gap-5">
+      <button mat-flat-button color="primary" type="submit" (click)="login()">
+        Login
+      </button>
+      <button mat-flat-button color="primary" (click)="signInWithHNUEID()">
+        Login with ID
+      </button>
+      <button mat-flat-button color="primary" (click)="chuyen()">Chuyển</button>
+    </div>
+  </form>
+</div>

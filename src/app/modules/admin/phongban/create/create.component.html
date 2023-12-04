@@ -1,0 +1,33 @@
+<div class="w-full p-4">
+  <div class="w-full flex justify-end">
+    <button mat-icon-button (click)="closeModal()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <form class="p-4" action="" [formGroup]="phongBanForm">
+    <div class="my-2 flex gap-4">
+      <mat-form-field class="w-full mat-fuse-dense">
+        <mat-label>Name</mat-label>
+        <input type="text" formControlName="name" matInput />
+      </mat-form-field>
+      <mat-form-field class="w-full mat-fuse-dense">
+        <mat-label>Fullname</mat-label>
+        <input type="text" formControlName="fullName" matInput />
+      </mat-form-field>
+    </div>
+    <div class="my-2 flex gap-4">
+      <mat-form-field class="w-full mat-fuse-dense">
+        <mat-label>Address</mat-label>
+        <input type="text" formControlName="address" matInput />
+      </mat-form-field>
+      <mat-form-field class="w-full mat-fuse-dense">
+        <mat-label>Description</mat-label>
+        <input type="text" formControlName="description" matInput />
+      </mat-form-field>
+    </div>
+    <div class="flex justify-end gap-4">
+      <button mat-flat-button color="warn" (click)="closeModal()">Close</button>
+      <button mat-flat-button color="primary" (click)="btnSave()">Save</button>
+    </div>
+  </form>
+</div>

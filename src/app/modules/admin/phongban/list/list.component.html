@@ -1,0 +1,22 @@
+<div class="p-4 w-full">
+  <button mat-flat-button color="primary" (click)="btnCreate()">create</button>
+  <div class="w-full">
+    <div
+      class="border w-full p-4 cursor-pointer my-2"
+      *ngFor="let item of dsPhongBan"
+      (click)="btnCreate(item)"
+    >
+      {{ item.name }}
+    </div>
+  </div>
+  <div class="mt-4">
+    <button
+      mat-flat-button
+      color="warn"
+      [routerLink]="['/dashboard']"
+      routerLinkActive="router-link-active"
+    >
+      back
+    </button>
+  </div>
+</div>
