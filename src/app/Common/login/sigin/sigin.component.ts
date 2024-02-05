@@ -41,7 +41,6 @@ export class SiginComponent {
     this.authService.login(this.loginObj).subscribe((response) => {
       const token = response.token;
       this.authService.setAuthToken(token);
-      console.log('login', token);
       this._router.navigate(['dashboard']);
       this.isLoading = false;
     });
